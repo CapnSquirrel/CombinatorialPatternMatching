@@ -9,6 +9,6 @@ def generate_reads(n_reads, read_length, genome):
     genome_length = len(genome)
     for _ in range(n_reads):
         start = random.randint(0, genome_length - read_length) 
-        reads.append([genome[x] for x in range(start, start + read_length+1)])
+        reads.append([genome[x] for x in range(start, start + read_length)])
 
     return reads
