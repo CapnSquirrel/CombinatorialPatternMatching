@@ -2,7 +2,10 @@ import random
 
 def genereate_genome(size):
     nucleobases = ["A", "C", "T", "G"]
-    return [nucleobases[random.randint(0, 3)] for i in range(size)]
+    genome = ""
+    for _ in range(size):
+        genome += nucleobases[random.randint(0, 3)]
+    return genome
 
 def generate_reads(n_reads, read_length, genome):
     reads = []
