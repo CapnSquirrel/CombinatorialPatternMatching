@@ -22,13 +22,13 @@ def test_suffix_array():
     # print(getsizeof(suffix_array))
 
 def test_BWT():
-    genome_size = 5
-    # n_reads = 1
-    # read_len = 3
+    genome_size = 20
+    n_reads = 1
+    read_len = 3
 
     human_genome = gg.genereate_genome(genome_size)
-    # reads = gg.generate_reads(n_reads, read_len, human_genome)
-
+    reads = gg.generate_reads(n_reads, read_len, human_genome)
+    pattern = reads[0]
     last_column = ""
     first_column = ""
     Mtext = ma.create_Mtext(human_genome + "$")
@@ -36,9 +36,15 @@ def test_BWT():
         last_column = last_column + line[-1]
         first_column = first_column + line[0]
         print(line)
+    print("text: ", human_genome)
     print("last column: ", last_column)
     print("first column: ", first_column)
-    print("first occurrence: ", ma.create_first_ocurrence(first_column))
-    for thing in ma.create_count(last_column):
+    first_occurrence = ma.create_first_occurrence(first_column)
+    print("first occurrence: ", first_occurrence)
+    count = ma.create_count(last_column)
+    for thing in count:
         print(thing)
+    print("pattern", pattern)
+    print(ma.better_BWT_matching(first_occurrence, last_column, pattern, count))
+
 test_BWT()

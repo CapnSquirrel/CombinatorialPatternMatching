@@ -42,7 +42,8 @@ def pattern_matching_with_suffix_array(text_len, pattern, suffix_array):
     last = max_index
     return (first, last)
 
-def better_BW_matching(first_ocurrence, last_column, pattern, count):
+# 
+def better_BWT_matching(first_occurrence, last_column, pattern, count):
     top = 0
     bottom = len(last_column) - 1
     
@@ -50,8 +51,8 @@ def better_BW_matching(first_ocurrence, last_column, pattern, count):
         if pattern != "":
             symbol = pattern[-1]
             pattern = pattern[:len(pattern)-1]
-            if symbol in last_column[top:bottom+1]: # may be off by one
-                symbol_fo = first_ocurrence[symbol]
+            if symbol in last_column[top:bottom+1]:
+                symbol_fo = first_occurrence[symbol]
                 top = symbol_fo + count[top][symbol]
                 bottom = symbol_fo + count[bottom+1][symbol] - 1
             else:
@@ -61,12 +62,12 @@ def better_BW_matching(first_ocurrence, last_column, pattern, count):
 
     return 0
 
-def create_first_ocurrence(first_column):
-    first_ocurrence = dict()
+def create_first_occurrence(first_column):
+    first_occurrence = dict()
     for i, symbol in enumerate(first_column):
-        if symbol not in first_ocurrence:
-            first_ocurrence[symbol] = i
-    return first_ocurrence
+        if symbol not in first_occurrence:
+            first_occurrence[symbol] = i
+    return first_occurrence
 
 def create_count(last_column):
     symbols = sorted(set(last_column))
