@@ -61,6 +61,23 @@ def better_BW_matching(first_ocurrence, last_column, pattern, count):
 
     return 0
 
+def create_first_ocurrence(first_column):
+    first_ocurrence = dict()
+    for i, symbol in enumerate(first_column):
+        if symbol not in first_ocurrence:
+            first_ocurrence[symbol] = i
+    return first_ocurrence
+
+def create_count(last_column):
+    symbols = sorted(set(last_column))
+    counts = dict.fromkeys(symbols, 0)
+    count_matrix = [dict.fromkeys(symbols, 0)]
+    for char in last_column:
+        counts[char] += 1
+        count_matrix.append(counts.copy())
+
+    return count_matrix
+
 # rotate text to the right by n
 def rotate_right(text, n):
     return text[-n:] + text[:-n]

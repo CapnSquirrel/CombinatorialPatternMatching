@@ -28,11 +28,17 @@ def test_BWT():
 
     human_genome = gg.genereate_genome(genome_size)
     # reads = gg.generate_reads(n_reads, read_len, human_genome)
-    
-    BWT = ""
-    for line in ma.create_Mtext(human_genome + "$"):
-        BWT = BWT + line[-1]
-        print(line)
-    print(BWT)
 
+    last_column = ""
+    first_column = ""
+    Mtext = ma.create_Mtext(human_genome + "$")
+    for line in Mtext:
+        last_column = last_column + line[-1]
+        first_column = first_column + line[0]
+        print(line)
+    print("last column: ", last_column)
+    print("first column: ", first_column)
+    print("first occurrence: ", ma.create_first_ocurrence(first_column))
+    for thing in ma.create_count(last_column):
+        print(thing)
 test_BWT()
