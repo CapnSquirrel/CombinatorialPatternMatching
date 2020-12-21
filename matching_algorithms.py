@@ -42,7 +42,6 @@ def pattern_matching_with_suffix_array(text_len, pattern, suffix_array):
     last = max_index
     return (first, last)
 
-# 
 def better_BWT_matching(first_occurrence, last_column, pattern, count):
     top = 0
     bottom = len(last_column) - 1
