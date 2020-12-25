@@ -40,6 +40,7 @@ def pattern_matching_with_suffix_array(text_len, pattern, suffix_array):
     if pattern != suffix_array[max_index][1][:pattern_len]:
         max_index -= 1
     last = max_index
+    
     return (first, last)
 
 def better_BWT_matching(first_occurrence, last_column, pattern, count):

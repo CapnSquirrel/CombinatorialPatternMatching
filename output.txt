@@ -1,0 +1,139 @@
+100000 reads, read length of 100
+Suffix array time:  2.2625517
+Suffix array memory 5014247375
+BetterBWT time:  16.7575775
+BetterBWT memory 10032877727
+
+100000 reads, read length of 90
+Suffix array time:  2.2480323999999996
+Suffix array memory 5014247384
+BetterBWT time:  15.2111135
+BetterBWT memory 10032877727
+
+100000 reads, read length of 80
+Suffix array time:  2.7429576
+Suffix array memory 5014247375
+BetterBWT time:  23.674003499999998
+BetterBWT memory 10032877735
+
+100000 reads, read length of 70
+Suffix array time:  2.3656346
+Suffix array memory 5014247375
+BetterBWT time:  13.2779469
+BetterBWT memory 10032877727
+
+100000 reads, read length of 60
+Suffix array time:  2.5915548999999998
+Suffix array memory 5014247384
+BetterBWT time:  13.1047729
+BetterBWT memory 10032877727
+
+100000 reads, read length of 50
+Suffix array time:  2.5300263000000003
+Suffix array memory 5014247384
+BetterBWT time:  11.8252326
+BetterBWT memory 10032877727
+
+100000 reads, read length of 40
+Suffix array time:  2.5182598
+Suffix array memory 5014247375
+BetterBWT time:  10.777277999999999
+BetterBWT memory 10032877735
+
+100000 reads, read length of 30
+Suffix array time:  2.2786628999999996
+Suffix array memory 5014247384
+BetterBWT time:  8.7463186
+BetterBWT memory 10032877726
+
+100000 reads, read length of 20
+Suffix array time:  2.4485541
+Suffix array memory 5014247375
+BetterBWT time:  8.077198000000001
+BetterBWT memory 10032877734
+
+100000 reads, read length of 10
+Suffix array time:  2.5396645
+Suffix array memory 5014247375
+BetterBWT time:  8.015044
+BetterBWT memory 10032877725
+
+100000 reads, read length of 1
+Suffix array time:  2.4501339
+Suffix array memory 5014247375
+BetterBWT time:  7.9748527000000005
+BetterBWT memory 10032877735
+
+
+
+90000 reads, read length of 100
+Suffix array time:  2.4949463
+Suffix array memory 5014247375
+BetterBWT time:  14.449490299999999
+BetterBWT memory 10032877735
+
+80000 reads, read length of 100
+Suffix array time:  2.5246062
+Suffix array memory 5014247375
+BetterBWT time:  13.808125600000002
+BetterBWT memory 10032877735
+
+70000 reads, read length of 100
+Suffix array time:  2.13547
+Suffix array memory 5014247373
+BetterBWT time:  11.4941875
+BetterBWT memory 10032877727
+
+60000 reads, read length of 100
+Suffix array time:  2.2160358000000002
+Suffix array memory 5014247384
+BetterBWT time:  12.0514987
+BetterBWT memory 10032877727
+
+50000 reads, read length of 100
+Suffix array time:  2.2914738
+Suffix array memory 5014247375
+BetterBWT time:  11.981883
+BetterBWT memory 10032877726
+
+40000 reads, read length of 100
+Suffix array time:  2.0206484
+Suffix array memory 5014247375
+BetterBWT time:  9.491289299999998
+BetterBWT memory 10032877734
+
+30000 reads, read length of 100
+Suffix array time:  2.1530371
+Suffix array memory 5014247375
+BetterBWT time:  9.4389158
+BetterBWT memory 10032877726
+
+20000 reads, read length of 100
+Suffix array time:  1.7690074
+Suffix array memory 5014247375
+BetterBWT time:  7.7953755000000005
+BetterBWT memory 10032877735
+
+10000 reads, read length of 100
+Suffix array time:  1.824418
+Suffix array memory 5014247374
+BetterBWT time:  7.320971699999999
+BetterBWT memory 10032877734
+
+1000 reads, read length of 100
+Suffix array time:  1.6291931000000002
+Suffix array memory 5014247384
+BetterBWT time:  7.3323385
+BetterBWT memory 10032877726
+
+1 reads, read length of 100
+Suffix array time:  1.8728294
+Suffix array memory 5014247375
+BetterBWT time:  7.282923599999999
+BetterBWT memory 10032877734
+
+1 reads, read length of 1
+Suffix array time:  1.7139152000000002
+Suffix array memory 5014247384
+BetterBWT time:  7.6843096
+BetterBWT memory 10032877726
