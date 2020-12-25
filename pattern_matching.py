@@ -2,9 +2,8 @@ import genome_generation as gg
 import matching_algorithms as ma
 import timeit
 from guppy import hpy
-
-# import sys
-# sys.stdout = open("output.txt", "a")
+import sys
+sys.stdout = open("output.txt", "a")
 
 def test_suffix_array(human_genome, reads):
     if reads == []:
@@ -54,7 +53,7 @@ def test_BWT(human_genome, reads):
 h = hpy()
 genome_size = 100000
 n_reads = 100000
-read_len = 80
+read_len = 100
 
 human_genome = gg.genereate_genome(genome_size)
 reads = gg.generate_reads(n_reads, read_len, human_genome)
